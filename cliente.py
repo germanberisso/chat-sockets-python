@@ -15,9 +15,9 @@ def start_client(host='127.0.0.1', port=5000):
         
     try:
         while True:
-            mensaje = input("\nIngresá tu mensaje (escribí 'éxito' para salir): ")
+            mensaje = input("\nIngresá tu mensaje (escribí 'exito' para salir): ")
             
-            if mensaje.strip().lower() == 'éxito':
+            if mensaje.strip().lower() == 'exito':
                 # Aviso opcional al servidor
                 client_socket.sendall("exit".encode('utf-8'))
                 print("Desconectando...")
